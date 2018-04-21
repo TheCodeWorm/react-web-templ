@@ -1,0 +1,12 @@
+#menu {
+    position: relative;
+    top: 100px;
+    left: 340px;
+    /*display: inline-block;*/
+}
+#menu li{
+    font-weight: bold;
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 14px;
+}
