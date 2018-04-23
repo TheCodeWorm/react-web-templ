@@ -4,6 +4,7 @@ import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import Header from '../components/Header';
+import Home_Page from '../components/Home_Page';
 
 class App extends Component {
 	constructor() {
@@ -32,7 +33,7 @@ class App extends Component {
 		/*
 		if (!robots.length) {
 			return <h1>Loading</h1>
-		} else {
+		} else { 
 			return */ 
 		// use ternary instead of above:
 		return !robots.length ?
@@ -40,14 +41,27 @@ class App extends Component {
 			( 
 				<div className='tc'>
 				  <Header />
-					<h1 className='f1'>Robofriends</h1>
-					<SearchBox searchChange={this.onSearchChange}/>
-					<Scroll>
-						<CardList robots={filteredRobots}/>
-				  </Scroll>
+				  <Home_Page />
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
+				  <p>testing</p>
 				</div>
 			);
-		
 	}
 }
 

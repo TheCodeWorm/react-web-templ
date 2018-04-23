@@ -3,14 +3,11 @@ import './header.css';
 
 const Header = () => {
 	return (
-	  <div>
-	  	<ul id="menu">
-        <li>home</li>
-        <li>menu</li>
-        <li>about</li>
-        <li>contact</li>
-      </ul>
-	  </div>
+	  <div class="navbar sticky">
+		  <a href="#come">Contact</a>
+		  <a href="#projects">Projects</a>
+		  <a href="#home">Home</a>
+		</div>
 	);
 }
 
