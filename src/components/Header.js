@@ -1,9 +1,9 @@
 import React from 'react'
 import './header.css';
 
-var onItemClick = function (event) {
-	event.currentTarget.style.backgroundColor = '#ccc';
-}
+onItemClick: function (event) {
+    event.currentTarget.style.backgroundColor = '#ccc';
+},
 
 const Header = () => {
 	return (
