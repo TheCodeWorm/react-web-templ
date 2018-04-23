@@ -4,8 +4,8 @@ import Noel from '../assets/Noel.png';
 
 const Home_Page = () => {
 	return (
-	  <div className='profile-pic'>
-		  <img alt= 'Noel' src={Noel} />
+	  <div >
+		  <img className='profile-pic' alt= 'Noel' src={Noel} />
 		</div>
 	);
 }

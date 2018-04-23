@@ -1,6 +1,5 @@
 
-
-h1 {
-	font-weight: 200;
-	color: #0ccac4;
+.home_page_container {
+	text-align: center;
+	margin: 0px 20px 0px 20px;
 }

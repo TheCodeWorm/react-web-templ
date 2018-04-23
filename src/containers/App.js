@@ -39,26 +39,9 @@ class App extends Component {
 		return !robots.length ?
 		<h1>Loading</h1> :
 			( 
-				<div className='tc'>
+				<div className='home_page_container'>
 				  <Header />
 				  <Home_Page />
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
-				  <p>testing</p>
 				  <p>testing</p>
 				</div>
 			);

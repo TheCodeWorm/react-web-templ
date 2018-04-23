@@ -1,14 +1,20 @@
 import React from 'react'
 import './header.css';
 
+var onItemClick = function (event) {
+	event.currentTarget.style.backgroundColor = '#ccc';
+}
+
 const Header = () => {
 	return (
-	  <div class="navbar sticky">
-		  <a href="#come">Contact</a>
-		  <a href="#projects">Projects</a>
-		  <a href="#home">Home</a>
-		</div>
-	);
+	  <div>
+      <ul className = {'navbar sticky'}>
+        <ul className={'menu-item'} onClick={this.onItemClick}>Contact</ul>
+        <ul className={'menu-item'} onClick={this.onItemClick}>Projects</ul>
+        <ul className={'menu-item'} onClick={this.onItemClick}>Home</ul>
+      </ul>
+    </div>
+	)
 }
 
 export default Header;
