@@ -52,8 +52,8 @@ class App extends Component {
 		} else { 
 			return */ 
 		// use ternary instead of above:
-		 return this.state.active_page === '' ?
-		 <h1>Loading...</h1> : 
+		 return this.state.active_page ==='' ?
+		 <h1>Loading...</h1> :  
 			( 
 				<div className='home_page_container'>
 					<nav class="dt w-100 border-box ph5-ns">
