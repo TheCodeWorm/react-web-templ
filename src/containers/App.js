@@ -7,6 +7,14 @@ import Header from '../components/Header';
 import Home_Page from '../components/Home_Page';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
 class App extends Component {
 	constructor() {
 		super();
@@ -41,6 +49,24 @@ class App extends Component {
 		this.setState({ searchfield: event.target.value });
 	}
 
+	getFbFeed = () => {
+		return (
+      <div class="fb-page-container">
+			  <div class="fb-page" 
+			    data-href="https://www.facebook.com/TheCodeWorm"
+			    data-width="500"
+			    data-tabs="timeline" data-small-header="true" 
+			    data-adapt-container-width="true" data-hide-cover="true" 
+			    data-show-facepile="false">
+			    <blockquote cite="https://www.facebook.com/facebook" 
+				    class="fb-xfbml-parse-ignore">
+				    <a href="https://www.facebook.com/TheCodeWorm">Facebook</a>
+			    </blockquote>
+			  </div>
+		  </div>
+		)
+	}
+
 	render() {
 		const { active_page } = this.state;
 		/*
@@ -67,7 +93,7 @@ class App extends Component {
 					</nav>
 				  <Header />
 				  <Home_Page />
-				  <p>testing</p>
+				  {this.getFbFeed()}
 				</div>
 			);
 	}
